@@ -12,8 +12,11 @@ label {
     background-color: rgb(171, 180, 233);
     border-radius: 10px;
     padding: 5px;
-    transition: 1s;
+    transition: 0.5s;
 }
 label:hover {
     background-color: white;
+}
+.btn {
+    background-color: black;
 }
