@@ -1,9 +1,9 @@
 // generate prefix of name
 function genPrefix(firstName) {
   if (firstName.length > 4) {
-    return "Great";
+    return "Legendary";
   } else {
-    return "Master";
+    return "Infamous";
   }
 }
 
@@ -11,22 +11,52 @@ function genPrefix(firstName) {
 function genFirstName(firstName) {
   const firstLetter = firstName.charAt(0).toLowerCase();
   if (firstLetter === "a") {
-    return "Jeff";
-  } else if (firstLetter === "b") {
-    return "Joe";
-  } else if (firstLetter === "c") {
-    return "Chris";
+    return "Applejack";
+  } else if (firstLetter === "c" || firstLetter === 'b') {
+    return "Child";
   } else if (firstLetter === "d") {
-    return "Dana";
+    return "Donut";
+  } else if (firstLetter === "e") {
+    return "Elsa";
+  } else if (firstLetter === "f") {
+    return "Fish";
+  } else if (firstLetter === "g") {
+    return "Goddess";
+  } else if (firstLetter === "h") {
+    return "Hyper";
+  } else if (firstLetter === "i") {
+    return "Ice";
+  } else if (firstLetter === "j") {
+    return "Justin";
+  } else if (firstLetter === "k") {
+    return "Knight";
+  } else if (firstLetter === "l") {
+    return "Loser";
+  } else if (firstLetter === "m") {
+    return "Macaron";
+  } else if (firstLetter === "n") {
+    return "Noodle";
+  } else if (firstLetter === "o") {
+    return "Old";
+  } else if (firstLetter === "p") {
+    return "Poison";
+  } else if (firstLetter === "q") {
+    return "Cotton";
+  } else if (firstLetter === "r") {
+    return "Raddish";
+  } else if (firstLetter === "s") {
+    return "Strawberry";
+  } else if (firstLetter === "t") {
+    return "Twizzler";
   } else {
-    return "Alex";
+    return "Vampire";
   }
 }
 
 // generate middle name
 function getMiddleName(roadType, favColor) {
   if (roadType === "road") {
-    return `${favColor}ridge`;
+    return `${favColor}line`;
   } else if (roadType === "street") {
     return `${favColor}land`;
   } else if (roadType === "avenue") {
@@ -50,14 +80,20 @@ function genLastName(lastName) {
   } else if (lastLetter === "o") {
     return "Thing";
   } else if (lastLetter === "u") {
-    return "Simp";
-  } else {
     return "Storm";
+  } else { 
+    return "Simp";
   }
 }
 // generate suffix
 function genSuffix(favAnimal) {
-  return `${favAnimal}`;
+  if (favAnimal === 'dog' || favAnimal === 'cat') {
+    return 'Swamp'
+  } else if (favAnimal === 'bat'){
+    return 'Pumpkin'
+  } else {
+    return `${favAnimal}`
+  }
 }
 
 //master function to assemble full name
