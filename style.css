@@ -1,5 +1,9 @@
 body {
     background-color: #46B1C9;
+    background-image: url("imgs/crkBackgroundwithcart.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 h1 {
     font-family: "ff-dagny-web-pro", sans-serif;
@@ -30,4 +34,7 @@ label:hover {
     font-family: "eixample-dip", sans-serif;
 font-weight: 400;
 font-style: normal;
+}
+#result {
+    background-color: whitesmoke;
 }

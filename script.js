@@ -55,8 +55,13 @@ function genFirstName(firstName) {
 
 // generate middle name
 function getMiddleName(roadType, favColor) {
-  if (roadType === "road") {
-    return `${favColor}line`;
+  // roadtype is road with 
+  if (roadType === "road" && favColor === "blue" || favColor === "Blue") {
+    return `Bluey`;
+  } else if (roadType === "road" && favColor === "green" || favColor === "Green") {
+    return `Grendline`;
+  } else if (roadType === 'road') { 
+    return `${favColor}line`
   } else if (roadType === "street") {
     return `${favColor}land`;
   } else if (roadType === "avenue") {
