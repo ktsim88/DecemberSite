@@ -54,19 +54,23 @@ function genFirstName(firstName) {
 }
 
 // generate middle name
-function getMiddleName(roadType, favColor) {
-  // roadtype is road with 
-  if (roadType === "road" && favColor === "blue" || favColor === "Blue") {
+function getMiddleName(birthMonth, favColor) {
+  // month with color
+  if (birthMonth === 'Jan') {
     return `Bluey`;
-  } else if (roadType === "road" && favColor === "green" || favColor === "Green") {
+  } else if (birthMonth === "February" && favColor === "green") {
     return `Grendline`;
-  } else if (roadType === 'road') { 
+  } else if (birthMonth === 'March') { 
     return `${favColor}line`
-  } else if (roadType === "street") {
+  } else if (birthMonth === "April") {
     return `${favColor}land`;
-  } else if (roadType === "avenue") {
+  } else if (birthMonth === "May") {
     return `${favColor}place`;
-  } else if (roadType === "court") {
+  } else if (birthMonth === "June") {
+    return `${favColor}field`;
+  } else if (birthMonth === "July") {
+    return `${favColor}field`;
+  } else if (birthMonth === "Aug") {
     return `${favColor}field`;
   } else {
     return `${favColor}stone`;
@@ -106,14 +110,14 @@ function getFullName() {
   //define variables from inputs
   const firstName = document.getElementById("firstName").value.trim();
   const lastName = document.getElementById("lastName").value.trim();
-  const roadType = document.getElementById("roadType").value;
+  const birthMonth = document.getElementById("birthMonth").value;
   const favColor = document.getElementById("favColor").value.trim();
   const favAnimal = document.getElementById("favAnimal").value.trim();
 
   // generate each part of name using helper function
   const prefix = genPrefix(firstName);
   const newFirstName = genFirstName(firstName);
-  const middleName = getMiddleName(roadType, favColor);
+  const middleName = getMiddleName(birthMonth, favColor);
   const newlastName = genLastName(lastName);
   const suffix = genSuffix(favAnimal);
 

@@ -18,6 +18,9 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gjt4uoi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -27,67 +30,80 @@
     <main>
       <div class="container">
         <!-- greeting & instructions -->
-        <div class="text-center mb-4">
+        <div class="text-center mb-4 intro">
           <h1 class="mt-3">What's your Cookie name?</h1>
           <p>Put all of your information below to generate your name.<br>This will be your name if you ever visit the Cookie Run Kingdom Universe.</p>
         </div>
 
       <!-- results -->
-        <div id="result"></div>
+        <div id="result" class="text-center my-3"></div>
         <!-- start of form -->
         <form id="fantasyForm" class="mb-4">
-          <!-- firstname -->
-          <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input
+<!-- first name and last name -->
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input
               type="text"
               class="form-control"
               id="firstName"
               placeholder="Enter your first name"
             />
-          </div>
-          <!-- lastname -->
-          <div class="mb-3">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input
+                <label for="firstName">First Name</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <input
               type="text"
               class="form-control"
               id="lastName"
               placeholder="Enter your last name"
             />
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
           </div>
-          <!-- road type -->
-          <div class="mb-3">
-            <label for="roadType" class="form-label">Road Type</label>
-            <select id="roadType" class="form-select">
-              <option value="road">Road</option>
-              <option value="street">Street</option>
-              <option value="avenue">Avenue</option>
-              <option value="court">Court</option>
-              <option value="other">Other</option>
+          <!-- month -->
+          <div class="form-floating my-3">
+            <select id="birthMonth" class="form-select">
+              <option value="Jan">January</option>
+              <option value="Feb">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="Aug">August</option>
+              <option value="Sept">September</option>
+              <option value="Oct">October</option>
+              <option value="Nov">November</option>
+              <option value="Dec">December</option>
             </select>
+            <label for="floatingSelect" id="labelmonth">Select your Birth Month</label>
           </div>
-          <!-- color -->
-          <div class="mb-3">
-            <label for="favColor" class="form-label">Favorite Color</label>
+<!-- fav color -->
+          <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
               id="favColor"
               placeholder="Enter your favorite color"
             />
+            <label for="favColor">Favorite Color</label>
           </div>
-          
-          <!-- animal -->
-          <div class="mb-3">
-            <label for="favAnimal" class="form-label">Favorite Animal</label>
+          <!-- fav animal -->
+          <div class="form-floating mb-3">
             <input
-              type="text"
-              class="form-control"
-              id="favAnimal"
-              placeholder="Enter your favorite animal"
-            />
+            type="text"
+            class="form-control"
+            id="favAnimal"
+            placeholder="Enter your favorite animal"
+          />
+          <label for="favAnimal" class="form-label">Favorite Animal</label>
           </div>
+
+
           <div type="button" class="btn btn-primary w-100" onclick="getFullName()">Generate Button</div>
         </form>
         
