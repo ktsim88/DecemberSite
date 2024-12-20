@@ -56,9 +56,9 @@ function genFirstName(firstName) {
 // generate middle name
 function getMiddleName(birthMonth, favColor) {
   // month with color
-  if (birthMonth === 'Jan') {
+  if (birthMonth === 'Jan' && favColor === 'blue') {
     return `Bluey`;
-  } else if (birthMonth === "February" && favColor === "green") {
+  } else if (birthMonth === "Feb" && favColor === "green") {
     return `Grendline`;
   } else if (birthMonth === 'March') { 
     return `${favColor}line`
@@ -67,11 +67,11 @@ function getMiddleName(birthMonth, favColor) {
   } else if (birthMonth === "May") {
     return `${favColor}place`;
   } else if (birthMonth === "June") {
-    return `${favColor}field`;
+    return `${favColor}sind`;
   } else if (birthMonth === "July") {
-    return `${favColor}field`;
+    return `${favColor}amp`;
   } else if (birthMonth === "Aug") {
-    return `${favColor}field`;
+    return `${favColor}like`;
   } else {
     return `${favColor}stone`;
   }
@@ -94,10 +94,11 @@ function genLastName(lastName) {
     return "Simp";
   }
 }
-// generate suffix
+// generate suffix (will use switch case here)
 function genSuffix(favAnimal) {
-  if (favAnimal === 'dog' || favAnimal === 'cat') {
-    return 'Swamp'
+  const endAnimal = favAnimal.charAt(favAnimal.length - 1).toLowerCase();
+  if (endAnimal === 'a' || endAnimal === 'o') {
+    return `${favAnimal}nian`
   } else if (favAnimal === 'bat'){
     return 'Pumpkin'
   } else {
@@ -111,7 +112,7 @@ function getFullName() {
   const firstName = document.getElementById("firstName").value.trim();
   const lastName = document.getElementById("lastName").value.trim();
   const birthMonth = document.getElementById("birthMonth").value;
-  const favColor = document.getElementById("favColor").value.trim();
+  const favColor = document.getElementById("favColor").value;
   const favAnimal = document.getElementById("favAnimal").value.trim();
 
   // generate each part of name using helper function
