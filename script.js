@@ -89,37 +89,80 @@ function getMiddleName(birthMonth, favColor) {
   } else if (birthMonth === "March" && favColor === "grey") {
     return `Spots`;
   } else if (birthMonth === "March" && favColor === "black") {
-    return `Bamboo`;
+    return `Stock`;
   } else if (birthMonth === "March" && favColor === "red") {
     return `Taboo`;
   } else if (birthMonth === "March") {
     return `${favColor}moo`;
     // april
-  } else if (birthMonth === "April" || favColor === 'blue') {
+  } else if (birthMonth === "April" && favColor === 'blue') {
     return `Rainyside`;
-  } else if (birthMonth === "April" || favColor === 'purple') {
+  } else if (birthMonth === "April" && favColor === 'purple') {
     return `Boiled`;
-  } else if (birthMonth === "April" || favColor === 'orange') {
+  } else if (birthMonth === "April" && favColor === 'orange') {
     return `Yolkside`;
-  } else if (birthMonth === "April" || favColor === 'yellow') {
+  } else if (birthMonth === "April" && favColor === 'yellow') {
     return `Sunnyside`;
   } else if (birthMonth === "April") {
     return `${favColor}side`;
     // may
+  } else if (birthMonth === "May" && favColor === 'orange') {
+    return `Tangerine`;
+  } else if (birthMonth === "May" && favColor === 'pink') {
+    return `Cherrypop`;
+  } else if (birthMonth === "May" && favColor === 'red') {
+    return `Bloodpop`;
+  } else if (birthMonth === "May" && favColor === 'blue') {
+    return `Berrypop`;
+  } else if (birthMonth === "May" && favColor === 'yellow') {
+    return `Toxicpop`;
   } else if (birthMonth === "May") {
-    return `${favColor}place`;
+    return `${favColor}pop`;
+    // june
+  } else if (birthMonth === "June" && favColor === 'purple') {
+    return `Hexa`;
+  } else if (birthMonth === "June" && favColor === 'white') {
+    return `Triangular`;
+  } else if (birthMonth === "June" && favColor === 'pink') {
+    return `Penta`;
+  } else if (birthMonth === "June" && favColor === 'black') {
+    return `Deca`;
   } else if (birthMonth === "June") {
-    return `${favColor}sind`;
+    return `${favColor}ism`;
+    // july
+  } else if (birthMonth === "July" && favColor === 'red') {
+    return `Rose`;
+  } else if (birthMonth === "July" && favColor === 'white') {
+    return `Zerose`;
+  } else if (birthMonth === "July" && favColor === 'yellow') {
+    return `Tulip`;
+  } else if (birthMonth === "July" && favColor === 'purple') {
+    return `Lilac`;
   } else if (birthMonth === "July") {
-    return `${favColor}amp`;
+    return `${favColor}bloom`;
+    //august
+  } else if (birthMonth === "Aug" && favColor === 'red') {
+    return `Romeo`;
+  } else if (birthMonth === "Aug" && favColor === 'grey') {
+    return `Sword`;
+  } else if (birthMonth === "Aug" && favColor === 'black') {
+    return `Romantic`;
+  } else if (birthMonth === "Aug" && favColor === 'pink') {
+    return `Juliet`;
+  } else if (birthMonth === "Aug" && favColor === 'white') {
+    return `Jest`;
   } else if (birthMonth === "Aug") {
-    return `${favColor}like`;
+    return `${favColor}meo`;
+    //september
   } else if (birthMonth === "Sept") {
     return `${favColor}p`;
+    //october
   } else if (birthMonth === "Oct") {
     return `${favColor}like`;
+    //november
   } else if (birthMonth === "Nov") {
     return `${favColor}q`;
+    //december
   } else if (birthMonth === "Dec" && favColor === "white") {
     return `snow`;
   } else {
