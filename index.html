@@ -17,10 +17,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/gjt4uoi.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gjt4uoi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -32,34 +35,39 @@
         <!-- greeting & instructions -->
         <div class="text-center mb-4 intro">
           <h1 class="mt-3">What's your Cookie name? 🍪</h1>
-          <p>Type all of your information and select the options below to generate your name.<br>This will be your name if you ever visit the Cookie Run Kingdom Universe.<br>Cookie will be added after your name.</p>
+          <p>
+            Type all of your information and select the options below to
+            generate your name.<br />This will be your name if you ever visit
+            the Cookie Run Kingdom Universe.<br />Cookie will be added after
+            your name.
+          </p>
         </div>
 
-      <!-- results -->
+        <!-- results -->
         <div id="result" class="text-center my-3"></div>
         <!-- start of form -->
         <form id="fantasyForm" class="mb-4">
-<!-- first name and last name -->
+          <!-- first name and last name -->
           <div class="row g-2">
             <div class="col-md mt-3">
               <div class="form-floating">
                 <input
-              type="text"
-              class="form-control"
-              id="firstName"
-              placeholder="Enter your first name"
-            />
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Enter your first name"
+                />
                 <label for="firstName">First Name</label>
               </div>
             </div>
             <div class="col-md mt-3">
               <div class="form-floating">
                 <input
-              type="text"
-              class="form-control"
-              id="lastName"
-              placeholder="Enter your last name"
-            />
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Enter your last name"
+                />
                 <label for="lastName">Last Name</label>
               </div>
             </div>
@@ -80,9 +88,11 @@
               <option value="Nov">November</option>
               <option value="Dec">December</option>
             </select>
-            <label for="floatingSelect" id="labelmonth">Select your Birth Month</label>
+            <label for="floatingSelect" id="labelmonth"
+              >Select your Birth Month</label
+            >
           </div>
-<!-- fav color -->
+          <!-- fav color -->
           <div class="form-floating mb-3">
             <select class="form-select" id="favColor">
               <option value="red">Red</option>
@@ -102,18 +112,22 @@
           <!-- fav animal -->
           <div class="form-floating mb-3">
             <input
-            type="text"
-            class="form-control"
-            id="favAnimal"
-            placeholder="Enter your favorite animal"
-          />
-          <label for="favAnimal" class="form-label">Favorite Animal</label>
+              type="text"
+              class="form-control"
+              id="favAnimal"
+              placeholder="Enter your favorite animal"
+            />
+            <label for="favAnimal" class="form-label">Favorite Animal</label>
           </div>
 
-
-          <div type="button" class="btn btn-primary w-100" onclick="getFullName()">Generate Button</div>
+          <div
+            type="button"
+            class="btn btn-primary w-100"
+            onclick="getFullName()"
+          >
+            Generate Button
+          </div>
         </form>
-        
       </div>
     </main>
     <footer>
