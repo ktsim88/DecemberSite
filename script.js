@@ -284,6 +284,14 @@ function genSuffix(favAnimal) {
 
 //master function to assemble full name
 function getFullName() {
+  // Get the form
+  const form = document.getElementById("fantasyForm");
+
+  // Check if form is valid
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
   //define variables from inputs
   const firstName = document.getElementById("firstName").value.trim();
   const lastName = document.getElementById("lastName").value.trim();

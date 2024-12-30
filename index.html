@@ -46,7 +46,7 @@
         <!-- results -->
         <div id="result" class="text-center my-3"></div>
         <!-- start of form -->
-        <form id="fantasyForm" class="mb-4">
+        <form id="fantasyForm" class="mb-4 needs-validation">
           <!-- first name and last name -->
           <div class="row g-2">
             <div class="col-md mt-3">
@@ -56,6 +56,7 @@
                   class="form-control"
                   id="firstName"
                   placeholder="Enter your first name"
+                  required
                 />
                 <label for="firstName">First Name</label>
               </div>
@@ -67,14 +68,17 @@
                   class="form-control"
                   id="lastName"
                   placeholder="Enter your last name"
+                  required
                 />
                 <label for="lastName">Last Name</label>
               </div>
             </div>
           </div>
+
           <!-- month -->
           <div class="form-floating my-3">
-            <select id="birthMonth" class="form-select">
+            <select id="birthMonth" class="form-select" required>
+              <option value="" disabled selected>Choose your Month...</option>
               <option value="Jan">January</option>
               <option value="Feb">February</option>
               <option value="March">March</option>
@@ -91,10 +95,14 @@
             <label for="floatingSelect" id="labelmonth"
               >Select your Birth Month</label
             >
+            <div class="invalid-feedback">Please select a valid month.</div>
           </div>
           <!-- fav color -->
           <div class="form-floating mb-3">
-            <select class="form-select" id="favColor">
+            <select class="form-select" id="favColor" required>
+              <option selected disabled value="">
+                Choose your favotite color
+              </option>
               <option value="red">Red</option>
               <option value="orange">Orange</option>
               <option value="yellow">Yellow</option>
@@ -116,12 +124,13 @@
               class="form-control"
               id="favAnimal"
               placeholder="Enter your favorite animal"
+              required
             />
             <label for="favAnimal" class="form-label">Favorite Animal</label>
           </div>
 
           <div
-            type="button"
+            type="submit"
             class="btn btn-primary w-100"
             onclick="getFullName()"
           >
