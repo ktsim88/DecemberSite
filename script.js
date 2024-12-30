@@ -19,7 +19,7 @@ function genFirstName(firstName) {
   } else if (firstLetter === "e") {
     return "Elsa";
   } else if (firstLetter === "f") {
-    return "Fish";
+    return "Follower";
   } else if (firstLetter === "g") {
     return "Goddess";
   } else if (firstLetter === "h") {
@@ -97,13 +97,22 @@ function genLastName(lastName) {
 // generate suffix (will use switch case here)
 function genSuffix(favAnimal) {
   const endAnimal = favAnimal.charAt(favAnimal.length - 1).toLowerCase();
-  if (endAnimal === 'a' || endAnimal === 'o') {
-    return `${favAnimal}nian`
-  } else if (favAnimal === 'bat'){
-    return 'Pumpkin'
-  } else {
-    return `${favAnimal}`
-  }
+  switch (endAnimal) {
+    case 'a':
+      return `${favAnimal}ian`;
+    case 'e':
+      return `${favAnimal}yz`
+    case 'h':
+      return `${favAnimal}tailz`
+    case 'i':
+      return `${favAnimal}wan`
+    case 'o':
+      return `${favAnimal}'ed`
+    case 'u':
+      return `${favAnimal}uuu~`
+    default:
+      return `${favAnimal}ish`
+  } 
 }
 
 //master function to assemble full name
