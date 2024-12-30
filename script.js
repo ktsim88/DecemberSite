@@ -222,15 +222,41 @@ function getMiddleName(birthMonth, favColor) {
 function genLastName(lastName) {
   const lastLetter = lastName.charAt(lastName.length - 1).toLowerCase();
   if (lastLetter === "a") {
-    return "Shadow";
+    return "Arrow";
+  } else if (lastLetter === "b") {
+    return "Shark";
+  } else if (lastLetter === "c") {
+    return "Cavar";
+  } else if (lastLetter === "d") {
+    return "Gold";
   } else if (lastLetter === "e") {
+    return "Cheese";
+  } else if (lastLetter === "f") {
     return "Frost";
+  } else if (lastLetter === "g") {
+    return "Glassberry";
+  } else if (lastLetter === "h") {
+    return "Haetae";
   } else if (lastLetter === "i") {
-    return "Thorn";
+    return "Icicle";
+  } else if (lastLetter === "j") {
+    return "Jacket";
+  } else if (lastLetter === "k") {
+    return "Mode";
+  } else if (lastLetter === "l") {
+    return "Blossom";
+  } else if (lastLetter === "m") {
+    return "Nutmeg";
+  } else if (lastLetter === "n") {
+    return "Flour";
   } else if (lastLetter === "o") {
-    return "Thing";
-  } else if (lastLetter === "u") {
+    return "Coral";
+  } else if (lastLetter === "p") {
+    return "Pearl";
+  } else if (lastLetter === "r") {
     return "Storm";
+  } else if (lastLetter === "t") {
+    return "Custard";
   } else { 
     return "Simp";
   }
