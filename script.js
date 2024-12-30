@@ -27,7 +27,7 @@ function genFirstName(firstName) {
   } else if (firstLetter === "i") {
     return "Ice";
   } else if (firstLetter === "j") {
-    return "Justin";
+    return "Jacks";
   } else if (firstLetter === "k") {
     return "Knight";
   } else if (firstLetter === "l") {
@@ -56,14 +56,56 @@ function genFirstName(firstName) {
 // generate middle name
 function getMiddleName(birthMonth, favColor) {
   // month with color
-  if (birthMonth === 'Jan' && favColor === 'blue') {
-    return `Bluey`;
+  if (birthMonth === 'Jan' && favColor === 'red') {
+    return `Hellman`;
+  } else if (birthMonth === "Jan" && favColor === "green") {
+    return `Evergreen`;
+  } else if (birthMonth === "Jan" && favColor === 'blue') {
+    return `Snowflake`;
+  }  else if (birthMonth === "Jan" && favColor === "yellow") {
+    return `Bellyman`;
+  } else if (birthMonth === "Jan" && favColor === "white") {
+    return `Snowman`;
+  } else if (birthMonth === "Jan") {
+    return `${favColor}man`;
+    // feb
+  } else if (birthMonth === "Feb" && favColor === "red") {
+    return `Lovelike`;
   } else if (birthMonth === "Feb" && favColor === "green") {
     return `Grendline`;
-  } else if (birthMonth === 'March') { 
-    return `${favColor}line`
+  } else if (birthMonth === "Feb" && favColor === "white") {
+    return `Fakelike`;
+  } else if (birthMonth === "Feb" && favColor === "pink") {
+    return `Cupidlike`;
+  } else if (birthMonth === "Feb" && favColor === "black") {
+    return `Emolike`;
+  } else if (birthMonth === 'Feb') { 
+    return `${favColor}like`
+    // march
+  } else if (birthMonth === "March" && favColor === "yellow") {
+    return `Cattle`;
+  } else if (birthMonth === "March" && favColor === "brown") {
+    return `Beef`;
+  } else if (birthMonth === "March" && favColor === "grey") {
+    return `Spots`;
+  } else if (birthMonth === "March" && favColor === "black") {
+    return `Bamboo`;
+  } else if (birthMonth === "March" && favColor === "red") {
+    return `Taboo`;
+  } else if (birthMonth === "March") {
+    return `${favColor}moo`;
+    // april
+  } else if (birthMonth === "April" || favColor === 'blue') {
+    return `Rainyside`;
+  } else if (birthMonth === "April" || favColor === 'purple') {
+    return `Boiled`;
+  } else if (birthMonth === "April" || favColor === 'orange') {
+    return `Yolkside`;
+  } else if (birthMonth === "April" || favColor === 'yellow') {
+    return `Sunnyside`;
   } else if (birthMonth === "April") {
-    return `${favColor}land`;
+    return `${favColor}side`;
+    // may
   } else if (birthMonth === "May") {
     return `${favColor}place`;
   } else if (birthMonth === "June") {
@@ -72,6 +114,14 @@ function getMiddleName(birthMonth, favColor) {
     return `${favColor}amp`;
   } else if (birthMonth === "Aug") {
     return `${favColor}like`;
+  } else if (birthMonth === "Sept") {
+    return `${favColor}p`;
+  } else if (birthMonth === "Oct") {
+    return `${favColor}like`;
+  } else if (birthMonth === "Nov") {
+    return `${favColor}q`;
+  } else if (birthMonth === "Dec" && favColor === "white") {
+    return `snow`;
   } else {
     return `${favColor}stone`;
   }
