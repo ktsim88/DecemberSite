@@ -44,9 +44,9 @@ function genFirstName(firstName) {
     return "Cotton";
   } else if (firstLetter === "r") {
     return "Raddish";
-  } else if (firstLetter === "s") {
+  } else if (firstLetter === "s" || first letter === 'u') {
     return "Strawberry";
-  } else if (firstLetter === "t") {
+  } else if (firstLetter === "t" || firstletter === 'v') {
     return "Twizzler";
   } else {
     return "Vampire";
