@@ -44,9 +44,9 @@ function genFirstName(firstName) {
     return "Cotton";
   } else if (firstLetter === "r") {
     return "Raddish";
-  } else if (firstLetter === "s" || first letter === 'u') {
+  } else if (firstLetter === "s" || firstLetter === 'u') {
     return "Strawberry";
-  } else if (firstLetter === "t" || firstletter === 'v') {
+  } else if (firstLetter === "t" || firstLetter === 'v') {
     return "Twizzler";
   } else {
     return "Vampire";
@@ -247,7 +247,7 @@ function genLastName(lastName) {
     return "Blossom";
   } else if (lastLetter === "m") {
     return "Nutmeg";
-  } else if (lastLetter === "n") {
+  } else if (lastLetter === "n" || lastLetter === 'v') {
     return "Flour";
   } else if (lastLetter === "o") {
     return "Coral";
@@ -255,7 +255,7 @@ function genLastName(lastName) {
     return "Pearl";
   } else if (lastLetter === "r") {
     return "Storm";
-  } else if (lastLetter === "t") {
+  } else if (lastLetter === "t" || lastLetter === 'z') {
     return "Custard";
   } else {
     return "Simp";
